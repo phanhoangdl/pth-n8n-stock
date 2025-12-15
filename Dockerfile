@@ -22,5 +22,6 @@ RUN pip3 install --break-system-packages --upgrade pip
 # --prefer-binary: Ưu tiên tải bản cài sẵn để cài đặt nhanh hơn, đỡ tốn RAM
 # pandas, requests: Thư viện nền tảng
 RUN pip3 install --break-system-packages --prefer-binary -U vnstock pandas requests
+RUN pip3 install --break-system-packages --prefer-binary pandas requests yfinance
 
 USER node
